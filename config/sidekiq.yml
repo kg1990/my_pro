@@ -1,0 +1,11 @@
+:verbose: false
+:concurrency: 3
+:pidfile: ./pids/sidekiq.pid
+:logfile: ./log/sidekiq.log
+staging:
+:concurrency: 5
+production:
+:concurrency: 3
+:queues:
+- default
+- [test_work, 2]

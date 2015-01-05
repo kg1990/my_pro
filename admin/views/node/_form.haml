@@ -1,0 +1,14 @@
+%fieldset.control-group
+  =f.label :name, :class => 'control-label'
+  .controls
+    =f.text_field :name, :class => 'form-control input-large input-with-feedback', :autofocus => true
+%fieldset.control-group
+  =f.label :sort_index, :class => 'control-label'
+  .controls
+    =f.text_field :sort_index, :class => 'form-control input-large input-with-feedback'
+.form-actions
+  =f.submit pat(:save), :class => 'btn btn-primary'
+  &nbsp;
+  =f.submit pat(:save_and_continue), :class => 'btn btn-info', :name => 'save_and_continue'
+  &nbsp;
+  =link_to pat(:cancel), url(:node, :index), :class => 'btn btn-default'

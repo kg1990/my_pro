@@ -1,0 +1,19 @@
+zh_cn:
+  user:
+    email_is_null: "email is null"
+    password_is_null: "password is null"
+    email_not_validate: "email is not validate"
+    password_not_validate: "password is not validate"
+    password_min_length: "password must be more then 4 word"
+    password_max_length: "password must be less then 40 word"
+    user_is_exist: "the email is used"
+  topic:
+    topic_id_is_null: "topic id is null"
+    title_is_null: "title is null"
+    body_is_null: "body is null"
+    node_id_is_null: "node id is null"
+    node_is_not_exist: "node is not exist"
+    topic_is_not_exist: "topic is not exist"
+    topic_is_enjoyed: "topic is enjoyed"
+    topic_is_collectioned: "topic is collectioned"
+    reply_body_is_null: "reply body is null"
