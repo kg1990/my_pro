@@ -56,17 +56,4 @@ end
 
 after_fork do |server, worker|
   GC.disable
-  begin
-    # defined?(MongoMapper::Document) and MongoMapper.connection.connect
-    # defined?(RedisWorker) and RedisWorker.client.reconnect
-    # defined?(RedisCache) and RedisCache.client.reconnect
-    # defined?(PadrinoCache) and PadrinoCache.client.reconnect
-    # defined?(RedisSettings) and RedisSettings.client.reconnect
-    # Sidekiq.configure_client do |config|
-    #   config.redis = { :namespace => 'manage', :url => "redis://#{REDIS_HOST}:#{REDIS_PORT}/4" }
-    # end
-  rescue Exception => e
-    # Airbrake.notify(e)
-  end
-
 end
